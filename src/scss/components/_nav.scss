@@ -1,0 +1,41 @@
+.nav {
+    overflow-x: auto;
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @media (max-width:$tablet-max) {
+            flex-direction: column;
+        }
+        @media (max-width:$mobile-max){
+             align-items: start; 
+        }
+    }
+
+    &__item {
+        @media (min-width:$tablet-min) {
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+        @media (max-width:$tablet-max){
+            &:not(:last-child){
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: math.div(19, 16);
+        font-weight: 400;
+        color: var(--dark);
+        transition: color $transitionSpeed $transitionFunction;
+        white-space: nowrap;
+
+        &:hover {
+            color: var(--blue-secondary);
+        }
+    }
+}

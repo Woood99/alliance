@@ -13,14 +13,16 @@
 
 
 // ui components
-@import "./ui-kit/component";
+@import "./ui-kit/button";
 
 
 // =============================================================================================================
 
 
 // small components
-// @import "./components/nav";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/burger";
 
 
 // =============================================================================================================

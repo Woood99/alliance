@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+"title": "Ui Kit"
+})
+
+<body class="page__body" style="padding: 20px">
+    <div class="site-container">
+        <div class="container">
+            <div class="block">
+                <div>
+                    <h4>Buttons</h4>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-reset btn-primary">Get a Quote</button>
+                    <button type="button" class="btn btn-reset btn-primary" disabled>Get a Quote</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-reset btn-secondary">Next</button>
+                    <button type="button" class="btn btn-reset btn-secondary" disabled>Next</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-reset btn-third btn-third--gold">View All</button>
+                    <button type="button" class="btn btn-reset btn-third btn-third--gold" disabled>View All</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-reset btn-third btn-third--blue">View All</button>
+                    <button type="button" class="btn btn-reset btn-third btn-third--blue" disabled>View All</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <style>
+        h4 {
+            font-size: 30px;
+            line-height: 100%;
+            margin-bottom: 10px;
+        }
+
+        .block:not(:first-child) {
+            margin-top: 30px;
+            border-top: 1px solid green;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row:not(:first-child) {
+            margin-top: 20px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+        }
+
+    </style>
+</body>
+
+
+</html>

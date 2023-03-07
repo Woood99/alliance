@@ -1,3 +1,35 @@
-.title {}
+.title-1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: math.div(47, 40);
+    text-transform: capitalize;
+
+    @media (max-width:$tablet-max) {
+        font-size: 30px;
+    }
+
+    @media (max-width:$smallTablet-max) {
+        font-size: 20px;
+    }
+}
+
+.title-2 {
+    font-size: 32px;
+    line-height: math.div(54, 32);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--dark);
+}
 
 .subtitle {}
+
+
+.text-center {
+    text-align: center;
+}
+
+.img-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

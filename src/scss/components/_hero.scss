@@ -1,0 +1,77 @@
+.hero {
+    position: relative;
+    height: calc(var(--vh) - var(--header-height));
+    min-height: 350px;
+
+    &__container {
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 120px;
+        display: flex;
+        align-items: flex-end;
+
+        @media (max-width:$smallTablet-max) {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__content {
+        --left-gap: 32px;
+        max-width: 704px;
+        position: relative;
+        z-index: 1;
+
+        @media (max-width:$tablet-max) {
+            --left-gap: 15px;
+            max-width: 500px;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            --left-gap: 8px;
+            max-width: 400px;
+        }
+    }
+
+    &__title {
+        color: var(--white);
+        margin-bottom: 16px;
+        position: relative;
+        padding-left: var(--left-gap);
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 1px;
+            background-color: var(--gold);
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+    }
+
+    &__descr {
+        padding-left: var(--left-gap);
+        color: var(--white);
+        font-size: 16px;
+        line-height: math.div(27, 16);
+
+        @media (max-width:$smallTablet-max) {
+            font-size: 14px;
+        }
+    }
+
+    &::before {
+        content: '';
+        background: var(--overlay-primary);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+}
+
+.container {}
+
+.title-1 {}

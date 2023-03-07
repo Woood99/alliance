@@ -4,7 +4,7 @@ $fontSize: 16;
 $minWidth: 320;
 $maxWidth: 1920;
 $contentWidth: 1319;
-$containerOffset: 15;
+$containerOffset: 16;
 $containerWidth: calc($contentWidth + ($containerOffset * 2));
 
 // main colors
@@ -12,6 +12,7 @@ $bodyColor: #fff; // Цвет body по умолчаниюу
 $mainColor: #142B35; // Цвет шрифта по умолчанию
 
 :root {
+    --black: #000;
     --dark: #142b35;
     --white: #fff;
     --gold: #f2b91d;
@@ -19,7 +20,7 @@ $mainColor: #142B35; // Цвет шрифта по умолчанию
     --blue: #3a98b2;
     --blue-secondary: #328ba4;
     --gray: #5b6e76;
-    --gray-slate: #738697;
+    --gray-secondary: #738697;
     --sinbad: #abd2d9;
     --alto: #e0e0e0;
     --overlay-primary: rgba(55, 46, 46, 0.4);

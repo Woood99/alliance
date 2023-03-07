@@ -19,14 +19,46 @@
 <body class="page__body">
     <div class="site-container">
         <header class="header">
-    <div class="container">
-        
+    <div class="header__container container">
+        <a href="#" class="header__logo logo">
+            <img src="./img/logo.svg" class="logo__img" alt="alliance moving & storage">
+        </a>
+        <nav class="header__nav nav" data-menu>
+            <ul class="nav__list list-reset">
+                <li class="nav__item"><a href="#" class="nav__link">Local Movers</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Long Distance</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Storage</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Service Area</a></li>
+            </ul>
+            <button type="button" class="btn btn-reset btn-primary header__btn">Get a Quote</button>
+        </nav>
+        <div class="header__actions">
+            <a href="tel:8473784949" class="header__phone">
+                <svg>
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <span>847-378-4949</span>
+            </a>
+            <button type="button" class="btn btn-reset btn-primary header__btn">Get a Quote</button>
+        </div>
+        <button class="header__menu burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span class="burger__line"></span>
+        </button>
     </div>
 </header>
+
         <main class="main">
-            <section class="hero">
-    <div class="container">
-        
+            <section class="hero img-bg" style="background-image: url('./img/hero-bg.webp')">
+    <div class="hero__container container">
+        <div class="hero__content">
+            <h1 class="title-1 hero__title">Looking For A Professional Moving Company in Chicago, IL?</h1>
+            <p class="hero__descr">
+                Alliance Moving & Storage is a family-operated moving company based in Rolling Meadows. Our mission is
+                to provide professional, affordable, and reliable moving solutions for residential and commercial needs
+                in the Chicagoland area.
+            </p>
+        </div>
     </div>
 </section>
         </main>

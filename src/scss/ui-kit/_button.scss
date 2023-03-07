@@ -1,0 +1,110 @@
+.btn-reset {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn {
+    transition: color $transitionSpeed $transitionFunction,
+        background-color $transitionSpeed $transitionFunction,
+        border $transitionSpeed $transitionFunction;
+}
+
+.btn-primary {
+    font-size: 16px;
+    line-height: math.div(19, 16);
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 16px 20px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--blue-secondary);
+    }
+
+    &:focus {
+        background-color: var(--blue-secondary);
+    }
+
+    &[disabled] {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.65;
+    }
+}
+
+.btn-secondary {
+    font-size: 16px;
+    line-height: math.div(19, 16);
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--gold);
+    padding: 14px 24px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--gold-secondary);
+    }
+
+    &:focus {
+        background-color: var(--gold-secondary);
+    }
+
+    &[disabled] {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.65;
+    }
+}
+
+.btn-third {
+    font-size: 16px;
+    line-height: math.div(19, 16);
+    font-weight: 400;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    padding: 14px 24px;
+    border-radius: 5px;
+
+
+    &[disabled] {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.65;
+    }
+
+    &--gold {
+        color: var(--black);
+        border: 1px solid var(--gold);
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--gold);
+        }
+
+        &:focus {
+            background-color: var(--gold);
+        }
+    }
+
+    &--blue {
+        color: var(--blue);
+        border: 1px solid var(--blue);
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--blue);
+        }
+
+        &:focus {
+            color: var(--white);
+            background-color: var(--blue);
+        }
+    }
+}
