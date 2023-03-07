@@ -1,0 +1,144 @@
+:root {
+<<<<<<< HEAD
+  --dark: #142b35;
+  --white: #fff;
+  --gold: #f2b91d;
+  --gold-secondary: #ecb51d;
+  --blue: #3a98b2;
+  --blue-secondary: #328ba4;
+  --gray: #5b6e76;
+  --gray-slate: #738697;
+  --sinbad: #abd2d9;
+  --alto: #e0e0e0;
+  --overlay-primary: rgba(55, 46, 46, 0.4);
+=======
+  --accent: #000;
+  --primary: #fff;
+>>>>>>> 13c039f2aeaa8b9424e7c8f2fa1a68599fef02ba
+}
+
+/* stylelint-disable */
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/../fonts/WorkSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/../fonts/WorkSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/../fonts/WorkSans-SemiBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: 400;
+  font-size: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: "Work Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+  line-height: 100%;
+  background-color: #fff;
+<<<<<<< HEAD
+  color: #142B35;
+=======
+  color: #000;
+>>>>>>> 13c039f2aeaa8b9424e7c8f2fa1a68599fef02ba
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.dis-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.is-hidden {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1349px;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

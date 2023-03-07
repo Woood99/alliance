@@ -1,21 +1,28 @@
 // main
-$fontFamily: "asd";
-$fontSize: 14;
+$fontFamily: "Work Sans";
+$fontSize: 16;
 $minWidth: 320;
 $maxWidth: 1920;
-$contentWidth: 1170;
+$contentWidth: 1319;
 $containerOffset: 15;
 $containerWidth: calc($contentWidth + ($containerOffset * 2));
 
 // main colors
 $bodyColor: #fff; // Цвет body по умолчаниюу
-$mainColor: #000; // Цвет шрифта по умолчанию
+$mainColor: #142B35; // Цвет шрифта по умолчанию
 
 :root {
-
-    // additional colors
-    --accent: #000;
-    --primary: #fff;
+    --dark: #142b35;
+    --white: #fff;
+    --gold: #f2b91d;
+    --gold-secondary: #ecb51d;
+    --blue: #3a98b2;
+    --blue-secondary: #328ba4;
+    --gray: #5b6e76;
+    --gray-slate: #738697;
+    --sinbad: #abd2d9;
+    --alto: #e0e0e0;
+    --overlay-primary: rgba(55, 46, 46, 0.4);
 }
 
 
