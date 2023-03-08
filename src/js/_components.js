@@ -3,6 +3,8 @@ import headerFixed from './components/headerFixed';
 import getHeightBlock from './modules/getHeightBlock';
 import './functions/fix-fullheight';
 import sliderBreakpoint from './modules/sliderBreakpoint';
+import './components/validate';
+
 
 // ==================================================================
 

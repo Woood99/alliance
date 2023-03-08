@@ -37,7 +37,17 @@
         font-size: 16px;
     }
 }
-
+.title-4{
+    font-weight: 500;
+font-size: 24px;
+line-height: math.div(38 , 24);
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: var(--dark);
+@media (max-width:$tablet-max){
+    font-size: 20px;
+}
+}
 .subtitle {
     font-weight: 600;
     font-size: 12px;

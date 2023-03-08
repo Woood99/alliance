@@ -1,0 +1,56 @@
+.form-primary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px 12px;
+
+    &__label {
+        &--name {
+            grid-column: 1/2;
+
+            @media (max-width:$mobile-max) {
+                grid-column: 1/-1;
+            }
+        }
+
+        &--tel {
+            grid-column: 2/3;
+
+            @media (max-width:$mobile-max) {
+                grid-column: 1/-1;
+            }
+        }
+
+        &--email {
+            grid-column: 1/-1;
+        }
+
+        &--notes {
+            grid-column: 1/-1;
+
+        }
+
+        input,
+        textarea {
+            width: 100%;
+        }
+
+        textarea {
+            max-width: 100%;
+        }
+    }
+
+    &__btn {
+        margin-top: 32px;
+        grid-column: 1/-1;
+        justify-self: center;
+
+        @media (max-width:$tablet-max) {
+            width: 50%;
+        }
+
+        @media (max-width:$mobile-max) {
+            width: 100%;
+            justify-self: stretch;
+        }
+    }
+}

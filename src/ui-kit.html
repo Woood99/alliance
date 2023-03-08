@@ -29,7 +29,30 @@
                     <button type="button" class="btn btn-reset btn-third btn-third--blue" disabled>View All</button>
                 </div>
             </div>
-
+            <div class="block">
+                <div>
+                    <h4>Input</h4>
+                </div>
+                <div class="row">
+                    <input type="text" name="Full Name" class="input-reset input-primary" placeholder="placeholder">
+                </div>
+                <div class="row">
+                    <textarea class="input-reset textarea-primary" placeholder=""></textarea>
+                </div>
+                <div class="row">
+                    <label class="label-input">
+                        <div class="label-input__name">Full Name <span>*</span></div>
+                        <input type="text" name="Full Name" class="input-reset input-primary label-input__input"
+                            placeholder="">
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="label-input">
+                        <div class="label-input__name">Notes</div>
+                        <textarea class="input-reset textarea-primary label-input__textarea" placeholder=""></textarea>
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -46,9 +69,20 @@
             margin-bottom: 10px;
         }
 
+        .block {
+            padding: 20px 0;
+        }
+
+        .block:first-child {
+            padding-top: 0;
+        }
+
+        .block:last-child {
+            padding-bottom: 0;
+        }
+
         .block:not(:first-child) {
-            margin-top: 30px;
-            border-top: 1px solid green;
+            border-top: 1px solid gray;
         }
 
         .row {

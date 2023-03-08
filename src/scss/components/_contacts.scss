@@ -1,0 +1,129 @@
+.contacts {
+    padding: 80px 0;
+    background-color: var(--water);
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        @media (max-width:$tablet-max) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    &__col {}
+
+    &__our {
+        margin-right: 32px;
+
+        @media (max-width:$tablet-max) {
+            margin: 0 0 32px 0;
+        }
+    }
+
+    &__us {
+        flex: 0 0 548px;
+
+        @media (max-width:$tablet-max) {
+            flex: 0 1 auto;
+            width: 100%;
+        }
+    }
+
+    @media (max-width:$tablet-max) {
+        padding: 40px 0 64px;
+    }
+}
+
+.our-contacts {
+
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__descr {
+        margin-bottom: 40px;
+
+        @media (max-width:$tablet-max) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        color: var(--dark);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: math.div(23, 14);
+
+        svg {
+            --size: 24px;
+            width: var(--size);
+            height: var(--size);
+            flex: 0 0 var(--size);
+            fill: var(--blue);
+            margin-right: 16px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        @media (max-width:$tablet-max) {
+            svg {
+                --size: 16px;
+                margin-right: 13px;
+            }
+        }
+
+        @media (max-width:$mobile-max) {
+            align-items: flex-start;
+
+            svg {
+                transform: translateY(4px);
+            }
+        }
+
+        @at-root a#{&} {
+            transition: color $transitionSpeed $transitionFunction;
+
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+
+}
+
+.contacts-us {
+    padding: 56px;
+    background-color: var(--white);
+
+    &__title {
+        text-transform: none;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @media (max-width:$tablet-max) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__form {}
+
+    @media (max-width:$tablet-max) {
+        padding: 24px;
+    }
+}

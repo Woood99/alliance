@@ -1,0 +1,85 @@
+.input-reset {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid green;
+    resize: none;
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        display: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.input-primary {
+    border-radius: 4px;
+    border: 1px solid var(--alto);
+    height: 40px;
+    padding: 0 15px;
+    color: var(--dark);
+
+    &::placeholder {
+        color: var(--alto);
+    }
+
+    &:focus {
+        border: 1px solid var(--gold);
+    }
+}
+
+.textarea-primary {
+    border-radius: 4px;
+    border: 1px solid var(--alto);
+    padding: 10px 15px;
+    color: var(--dark);
+    resize: auto;
+    min-height: 73px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+
+    &::placeholder {
+        color: var(--alto);
+    }
+
+    &:focus {
+        border: 1px solid var(--gold);
+    }
+}
+
+
+
+.label-input {
+
+    &__name {
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: math.div(16, 14);
+        text-transform: capitalize;
+        color: var(--gray);
+
+        span {
+            color: var(--gold);
+        }
+    }
+
+    .just-validate-error-label {
+        margin-top: 3px;
+        font-size: 12px;
+        color: var(--gold-secondary) !important;
+    }
+
+    &__input {}
+
+    &__textarea {}
+}
