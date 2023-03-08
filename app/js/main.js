@@ -15,6 +15,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_fix_fullheight__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions/fix-fullheight */ "./src/js/functions/fix-fullheight.js");
 /* harmony import */ var _modules_sliderBreakpoint__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderBreakpoint */ "./src/js/modules/sliderBreakpoint.js");
 /* harmony import */ var _components_validate__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/validate */ "./src/js/components/validate.js");
+/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/map */ "./src/js/components/map.js");
+/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_map__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -159,6 +162,59 @@ const headerFixed = () => {
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerFixed);
+
+/***/ }),
+
+/***/ "./src/js/components/map.js":
+/*!**********************************!*\
+  !*** ./src/js/components/map.js ***!
+  \**********************************/
+/***/ (() => {
+
+function removeAllControls(map) {
+  map.controls.remove('geolocationControl'); // удаляем геолокацию
+  map.controls.remove('searchControl'); // удаляем поиск
+  map.controls.remove('trafficControl'); // удаляем контроль трафика
+  map.controls.remove('typeSelector'); // удаляем тип
+  map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+  map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+  map.controls.remove('rulerControl'); // удаляем контрол правил
+}
+
+if (document.querySelector('#yamap')) {
+  let boolean = true;
+  window.addEventListener('scroll', () => {
+    if (boolean === true) {
+      getMapsApi();
+      setTimeout(() => {
+        maps();
+      }, 500);
+      boolean = false;
+    }
+  });
+  function getMapsApi() {
+    let script = document.createElement('script');
+    script.src = 'https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU';
+    script.type = "text/javascript";
+    document.getElementById('yamap').replaceWith(script);
+  }
+  function maps() {
+    let map = new ymaps.Map('map', {
+      center: [48.70315181851585, 44.498699276790624],
+      zoom: 18
+    });
+    removeAllControls(map);
+    let placemark1 = new ymaps.Placemark([48.70315181851585, 44.498699276790624], {}, {
+      iconLayout: "default#image",
+      iconImageHref: "./img/location.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [-17, -27]
+    });
+    map.geoObjects.add(placemark1);
+    ymaps.ready(map);
+    document.querySelector('.map__img').remove();
+  }
+}
 
 /***/ }),
 

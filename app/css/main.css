@@ -229,6 +229,15 @@ a {
   display: none;
 }
 
+.map-light-gray [class*=ground-pane] {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.map-remove-panel [class*=copyrights-pane] {
+  display: none !important;
+}
+
 .btn-reset {
   border: none;
   padding: 0;
@@ -1171,6 +1180,34 @@ a.our-contacts__item:hover {
   .contacts-us {
     padding: 24px;
   }
+}
+
+.map {
+  height: 550px;
+  background-color: var(--water);
+}
+@media (max-width: 1024px) {
+  .map {
+    height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .map {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .map {
+    height: 245px;
+  }
+}
+.map__img {
+  width: 100%;
+  height: 100%;
+}
+.map__img img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
