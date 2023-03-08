@@ -15,7 +15,7 @@ const sliderBreakpoint = (containerSelector, sectionSelector, breakpoint, pagina
     if (document.querySelector(containerSelector)) {
         const container = document.querySelectorAll(containerSelector);
         container.forEach(el => {
-            if (el && el.classList.contains('slider-mobile')) {
+            if (el) {
                 const sectionEl = el.closest(sectionSelector);
                 const paginationEl = sectionEl.querySelector(paginationSelector);
                 let swiper;

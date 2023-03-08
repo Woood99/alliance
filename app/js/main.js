@@ -32,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (0,_components_headerFixed__WEBPACK_IMPORTED_MODULE_1__["default"])();
   (0,_modules_getHeightBlock__WEBPACK_IMPORTED_MODULE_2__["default"])('.header', '--header-height', true);
   (0,_modules_sliderBreakpoint__WEBPACK_IMPORTED_MODULE_4__["default"])('.services__content', '.services', 1024, '.slider-pagination-primary');
+  (0,_modules_sliderBreakpoint__WEBPACK_IMPORTED_MODULE_4__["default"])('.our-advices__content', '.our-advices', 1024, '.slider-pagination-primary');
 });
 
 /***/ }),
@@ -513,7 +514,7 @@ const sliderBreakpoint = (containerSelector, sectionSelector, breakpoint, pagina
   if (document.querySelector(containerSelector)) {
     const container = document.querySelectorAll(containerSelector);
     container.forEach(el => {
-      if (el && el.classList.contains('slider-mobile')) {
+      if (el) {
         const sectionEl = el.closest(sectionSelector);
         const paginationEl = sectionEl.querySelector(paginationSelector);
         let swiper;

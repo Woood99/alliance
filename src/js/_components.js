@@ -13,4 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
     headerFixed();
     getHeightBlock('.header', '--header-height', true);
     sliderBreakpoint('.services__content', '.services', 1024, '.slider-pagination-primary');
+    sliderBreakpoint('.our-advices__content', '.our-advices', 1024, '.slider-pagination-primary');
 })

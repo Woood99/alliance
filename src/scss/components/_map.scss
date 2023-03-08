@@ -1,7 +1,9 @@
 .map {
     height: 550px;
     background-color: var(--water);
-
+    @media (max-width:1200px){
+        height: 400px;
+    }
     @media (max-width:$tablet-max) {
         height: 350px;
     }

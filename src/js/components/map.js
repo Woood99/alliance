@@ -18,7 +18,7 @@ if (document.querySelector('#yamap')) {
             boolean = false;
         }
     })
-
+    
     function getMapsApi() {
         let script = document.createElement('script');
         script.src = 'https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU';

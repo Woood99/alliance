@@ -2,7 +2,6 @@
 
 // global components
 @import "vars";
-@import "base";
 @import "mixins";
 @import "fonts";
 @import "settings";
@@ -16,6 +15,8 @@
 @import "./ui-kit/button";
 @import "./ui-kit/input";
 @import "./ui-kit/slider-pagination";
+@import "./ui-kit/service-item";
+@import "./ui-kit/advice-item";
 
 
 // =============================================================================================================
@@ -37,6 +38,7 @@
 @import "./components/services";
 @import "./components/contacts";
 @import "./components/map";
+@import "./components/our-advices";
 @import "./components/footer";
 
 
