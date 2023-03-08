@@ -1,0 +1,13 @@
+.slider-pagination-primary {
+    margin-top: 32px;
+    text-align: center;
+
+    .swiper-pagination-bullet {
+        background-color: var(--alto);
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active {
+            background-color: var(--gold);
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.services {
+    padding: 80px 0 100px;
+
+    &__subtitle {
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__descr {
+        margin: 0 auto;
+        color: var(--gray);
+        max-width: 450px;
+    }
+
+    &__content {
+        margin-top: 40px;
+
+        @media (max-width:$tablet-max) {
+            margin-top: 32px;
+        }
+    }
+
+    &__list {
+        @media (min-width:$tablet-min) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 16px;
+        }
+
+    }
+
+    &__item {
+        box-sizing: border-box;
+    }
+
+    @media (max-width:$tablet-max) {
+        padding: 40px 0;
+    }
+}
+
+
+
+.slider-mobile {}
+
+.service-item {
+    background-color: var(--white);
+    box-shadow: 1px 1px 12px rgba(71, 71, 71, 0.03);
+    transition: box-shadow $transitionSpeed $transitionFunction;
+    padding: 55px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-bottom: 24px;
+        width: 88px;
+        height: 88px;
+        background-color: rgba(var(--sinbad-rgb), 0.3);
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: var(--blue);
+        }
+
+        @media (max-width:$tablet-max) {
+            margin-bottom: 16px;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            width: 40px;
+            height: 40px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 24px;
+        transition: color $transitionSpeed $transitionFunction;
+
+        @media (max-width:$tablet-max) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__descr {
+        text-align: center;
+        color: var(--gray);
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 12px rgba(71, 71, 71, 0.06);
+
+        .service-item {
+            &__title {
+                color: var(--blue);
+            }
+        }
+    }
+
+    @media (max-width:$tablet-max) {
+        padding: 32px 23px;
+    }
+}

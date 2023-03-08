@@ -14,15 +14,48 @@
 }
 
 .title-2 {
+    font-weight: 500;
     font-size: 32px;
     line-height: math.div(54, 32);
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: var(--dark);
+
+    @media (max-width:$tablet-max) {
+        font-size: 20px;
+    }
 }
 
-.subtitle {}
+.title-3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: math.div(30, 18);
+    letter-spacing: -0.01em;
+    color: var(--dark);
 
+    @media (max-width:$tablet-max) {
+        font-size: 16px;
+    }
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: math.div(20, 12);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-secondary);
+}
+
+.descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: math.div(27, 16);
+
+    @media (max-width:$smallTablet-max) {
+        font-size: 14px;
+    }
+}
 
 .text-center {
     text-align: center;
@@ -32,4 +65,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.hide{
+    display: none;
 }
