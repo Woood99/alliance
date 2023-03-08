@@ -9,4 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     burgerMenu();
     headerFixed();
     getHeightBlock('.header', '--header-height', true);
+
 })
+
+

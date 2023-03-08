@@ -1,7 +1,8 @@
 .hero {
     position: relative;
     height: calc(var(--vh) - var(--header-height));
-    min-height: 350px;
+    min-height: 400px;
+    transition: height 1000000s ease;
 
     &__container {
         height: 100%;
