@@ -16,6 +16,7 @@
 }
 
 .btn-primary {
+    white-space: nowrap;
     font-size: 16px;
     line-height: math.div(19, 16);
     font-weight: 400;
@@ -40,6 +41,7 @@
 }
 
 .btn-secondary {
+    white-space: nowrap;
     font-size: 16px;
     line-height: math.div(19, 16);
     font-weight: 400;
@@ -64,6 +66,7 @@
 }
 
 .btn-third {
+    white-space: nowrap;
     font-size: 16px;
     line-height: math.div(19, 16);
     font-weight: 400;

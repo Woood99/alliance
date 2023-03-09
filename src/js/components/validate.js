@@ -43,4 +43,4 @@ const afterForm = () => {
     console.log('Sending happened :)');
 };
 
-validateForms('.contacts-us__form', contactsUsRules, afterForm);
+if (document.querySelector('.contacts-us__form')) validateForms('.contacts-us__form', contactsUsRules, afterForm);

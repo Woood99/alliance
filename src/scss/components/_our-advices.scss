@@ -5,12 +5,13 @@
     &__top {
         display: grid;
         grid-template-columns: 1fr max-content;
-        grid-gap: 8px 50px;
+        grid-row-gap: 8px;
+        grid-column-gap: 50px;
 
         @media (max-width:$smallTablet-max) {
-            grid-gap: 8px;
             grid-template-columns: 1fr;
-            justify-items: start;
+            grid-column-gap: 8px;
+            grid-row-gap: 8px;
         }
     }
 
@@ -34,14 +35,16 @@
 
         @media (max-width:$smallTablet-max) {
             margin-top: 24px;
+            justify-self: start;
         }
     }
 
     &__content {
-        margin-top: 40px;
+        padding: 10px;
+        margin: 30px -10px -10px -10px;
 
         @media (max-width:$tablet-max) {
-            margin-top: 32px;
+            margin-top: 22px;
         }
     }
 
@@ -49,7 +52,8 @@
         @media (min-width:$tablet-min) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 16px;
+            grid-column-gap: 16px;
+            grid-row-gap: 16px;
         }
     }
 

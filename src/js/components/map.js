@@ -7,23 +7,33 @@ function removeAllControls(map) {
     map.controls.remove('zoomControl'); // удаляем контрол зуммирования
     map.controls.remove('rulerControl'); // удаляем контрол правил
 }
-if (document.querySelector('#yamap')) {
+if (document.querySelector('#ymaps-id') && document.querySelector('#map')) {
     let boolean = true;
-    window.addEventListener('scroll', () => {
+    window.addEventListener('click', init);
+    window.addEventListener('scroll', init);
+    window.addEventListener('mousemove', init);
+    window.addEventListener('touchstart', init);
+
+    function init() {
         if (boolean === true) {
-            getMapsApi();
+            getApi();
             setTimeout(() => {
-                maps();
-            }, 500);
+                try {
+                    maps();
+                } catch (error) {
+                    setTimeout(() => {
+                        maps();
+                    }, 1500);
+                }
+            }, 1500);
             boolean = false;
         }
-    })
-    
-    function getMapsApi() {
-        let script = document.createElement('script');
+    }
+
+    function getApi() {
+        const script = document.querySelector('#ymaps-id');
         script.src = 'https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU';
         script.type = "text/javascript";
-        document.getElementById('yamap').replaceWith(script);
     }
 
     function maps() {
@@ -43,4 +53,5 @@ if (document.querySelector('#yamap')) {
         ymaps.ready(map);
         document.querySelector('.map__img').remove();
     }
+
 }

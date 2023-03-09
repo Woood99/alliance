@@ -1,5 +1,5 @@
 .services {
-    padding: 80px 0 100px;
+    padding: 80px 0;
 
     &__subtitle {
         margin-bottom: 8px;
@@ -16,10 +16,11 @@
     }
 
     &__content {
-        margin-top: 40px;
+        padding: 10px;
+        margin: 30px -10px -10px -10px;
 
         @media (max-width:$tablet-max) {
-            margin-top: 32px;
+            margin-top: 22px;
         }
     }
 
@@ -27,13 +28,18 @@
         @media (min-width:$tablet-min) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 16px;
+            grid-row-gap: 16px;
+            grid-column-gap: 16px;
         }
 
     }
 
     &__item {
         box-sizing: border-box;
+
+        @media (max-width:$tablet-max) and (min-width:$mobile-min) {
+            height: 100% !important;
+        }
     }
 
     @media (max-width:$tablet-max) {
