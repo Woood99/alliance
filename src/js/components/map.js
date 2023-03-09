@@ -23,9 +23,9 @@ if (document.querySelector('#ymaps-id') && document.querySelector('#map')) {
                 } catch (error) {
                     setTimeout(() => {
                         maps();
-                    }, 1500);
+                    }, 5000);
                 }
-            }, 1500);
+            }, 2000);
             boolean = false;
         }
     }
